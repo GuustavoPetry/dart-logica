@@ -14,6 +14,7 @@ void main(){
   double altura = 1.75;
 
   print(idade);
+  print(idade);
   print(altura);
 
 /**
