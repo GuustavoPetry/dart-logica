@@ -14,7 +14,7 @@ void main(){
   double altura = 1.75;
 
   String pessoa = 'Natalina'
-  double salario = 49.650
+  double salario = 52.125
 
   print(idade);
   print(altura);
