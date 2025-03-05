@@ -1,4 +1,5 @@
 // Crie um programa que receba um CPF e diga se é um CPF válido ou não.
+// Pesquise a lógica por trás da validação de um CPF.
 
 import 'dart:io';
 
