@@ -17,3 +17,6 @@
 
 //conectar repositório local com remoto:
 - git remote add origin <url_repositorio>
+
+//set origin master:
+- git push --set --upstream origin master
