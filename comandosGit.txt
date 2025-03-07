@@ -1,0 +1,8 @@
+git clone <url_repositorio>     //clona um projeto criando a pasta com o mesmo nome do repositório remoto
+git clone <url_repositorio> nome_pasta     //clona um repósitorio dentro da pasta "nome_pasta"
+git clone <url_repositorio> .       //clona um repositório diretamente dentro da pasta que o cmd se encontra, sem criar a pasta com o nome do repositório remoto
+
+//navegar entre pastas:
+cd <nome_pasta>     //entra em um diretório
+cd ../      //volta uma ou mais pastas -> ../ (uma pasta) -> ../../ (duas pastas) e assim por diante 
+cd ~        // vai para a pasta principal do usuário
