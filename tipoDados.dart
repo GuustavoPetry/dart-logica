@@ -13,8 +13,8 @@ void main(){
   int idade = 25;
   double altura = 1.75;
 
-  String pessoa = 'Natalina'
-  double salario = 52.125
+  String pessoa = 'marcelo';
+  double salario = 52.125;
 
   print(idade);
   print(altura);
