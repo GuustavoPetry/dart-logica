@@ -7,6 +7,12 @@ cd <nome_pasta>     //entra em um diretório
 cd ../      //volta uma ou mais pastas -> ../ (uma pasta) -> ../../ (duas pastas) e assim por diante 
 cd ~        // vai para a pasta principal do usuário
 
-// comandos linux
+//comandos linux:
 ls      //lista diretórios e arquivos que estão presentes no caminho atual
 ls -arquivos    // lista itens ocultos também
+
+//iniciar um repositório local:
+git init
+
+//conectar repositório local com remoto:
+git remote add origin <url_repositorio>
