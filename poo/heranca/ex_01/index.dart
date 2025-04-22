@@ -1,4 +1,4 @@
-import '../ex_01/Aluno.dart';
+import './Aluno.dart';
 
 void main(List<String> args) {
   // Exercicio 01:
