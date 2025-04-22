@@ -1,0 +1,6 @@
+1. Crie uma classe Pessoa com os atributos nome e idade. Depois, crie uma classe Aluno que herda de Pessoa e adiciona o atributo matricula. Crie um método que exibe os dados do aluno.
+2. Crie uma classe Veiculo com um método mover(). Depois, crie as classes Carro e Bicicleta que herdam de Veiculo, e sobrescreva o método mover() com mensagens diferentes para cada tipo de veículo.
+3. Crie uma classe Funcionario com nome e salario. Depois, crie duas classes que herdam de Funcionario: Gerente e Programador.
+
+Gerente tem um método calcularBonus() que retorna 20% do salário.
+Programador tem um método calcularBonus() que retorna 10% do salário.
