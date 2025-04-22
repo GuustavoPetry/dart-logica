@@ -1,11 +1,6 @@
-// Crie um programa que receba um CPF e diga se é um CPF válido ou não.
-// Pesquise a lógica por trás da validação de um CPF.
-
 import 'dart:io';
 
-void main(List<String> args) {
-  stdout.write('Informe um CPF: ');
-  String cpf = stdin.readLineSync()!;
+bool cpfIsValid(String cpf) {
   int soma = 0;
   int verificador1;
   int verificador2;
@@ -37,10 +32,23 @@ void main(List<String> args) {
     verificador2 = 11 - (soma % 11);
   }
 
-  if (int.parse(cpf[9]) == verificador1 && int.parse(cpf[10]) == verificador2){
-    print('CPF VÁLIDO');
+  if (int.parse(cpf[9]) == verificador1 && 
+      int.parse(cpf[10]) == verificador2){
+    return true;
   } else {
-    print('CPF INVÁLIDO');
+    return false;
+  }
+
+}
+
+void main(List<String> args) {
+  stdout.write('👉 Informe um CPF: ');
+  String cpf = stdin.readLineSync()!;
+
+  if (cpfIsValid(cpf)) {
+    print("✅ CPF VÁLIDO ✅");
+  } else {
+    print("❌ CPF INVÁLIDO ❌");
   }
 
 }
