@@ -1,5 +1,5 @@
-import '../ex_03/Gerente.dart';
-import '../ex_03/Programador.dart';
+import './Gerente.dart';
+import './Programador.dart';
 
 void main(List<String> args) {
   // Exercicio 03:

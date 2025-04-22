@@ -1,5 +1,5 @@
-import '../ex_02/Carro.dart';
-import '../ex_02/Bicicleta.dart';
+import './Carro.dart';
+import './Bicicleta.dart';
 
 void main(List<String> args) {
   // Exercicio 02:
