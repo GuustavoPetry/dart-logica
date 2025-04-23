@@ -8,7 +8,7 @@
  */
 
 abstract class Funcionario {
-  void beneficios();
-
-  void descontos();
+  String nome;
+  double salario;
+  Funcionario(this.nome, this.salario);
 }

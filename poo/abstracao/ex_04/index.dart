@@ -1,12 +1,7 @@
 import 'Clt.dart';
-import 'Pj.dart';
 
 void main(List<String> args) {
-  Clt clt = new Clt();
-  clt.beneficios();
-  clt.descontos();
-
-  Pj pj = new Pj();
-  pj.beneficios();
-  pj.descontos();
+  Clt c = new Clt("Gustavo", 4500);
+  c.beneficios();
+  print("Salário líquido do ${c.nome}: ${c.salarioLiquido()}");
 }

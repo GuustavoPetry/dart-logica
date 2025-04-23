@@ -1,13 +1,9 @@
 import 'Funcionario.dart';
 
-class Pj implements Funcionario {
-  @override
-  void beneficios() {
-    print('PJ não oferece benefícios');
-  }
+class Pj extends Funcionario {
+  Pj(String nome, double salario) : super(nome, salario);
 
-  @override
-  void descontos() {
-    print('PJ não tem descontos');
+  double salarioLiquido() {
+    return salario;
   }
 }
