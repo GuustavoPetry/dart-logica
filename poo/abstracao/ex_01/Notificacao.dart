@@ -6,6 +6,8 @@
  */
 
 abstract class Notificacao {
+  String mensagem;
+  Notificacao(this.mensagem);
   
   void enviar(String mensagem);
 }

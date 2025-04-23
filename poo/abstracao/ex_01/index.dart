@@ -3,8 +3,8 @@ import 'Sms.dart';
 
 void main(List<String> args) {
   Email e = new Email();
-  e.enviar("E-mail enviado com sucesso!");
+  e.enviar(e.mensagem);
 
   Sms s = new Sms();
-  s.enviar("SMS enviado com sucesso!");
+  s.enviar(s.mensagem);
 }
