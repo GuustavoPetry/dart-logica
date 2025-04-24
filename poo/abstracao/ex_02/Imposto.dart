@@ -11,6 +11,6 @@ abstract class Imposto {
   double calcular(double valor);
 
   void exibirImposto(double valor) {
-    print("Valor do imposto: R\$${calcular(valor).toStringAsFixed(2)}");
+    print("Imposto sobre R\$$valor: R\$${calcular(valor).toStringAsFixed(2)}");
   }
 }
