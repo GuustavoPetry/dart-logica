@@ -1,17 +1,19 @@
 import 'Funcionario.dart';
 
-class Clt extends Funcionario {
-  Clt(String nome, double salario) : super(nome, salario);
+class Clt implements Funcionario {
+  String nome;
+  double salario;
+  Clt(this.nome, this.salario);
 
-  void beneficios () {
+  void beneficios() {
     print('Benefícios do $nome: Plano de Saúde, Vale-alimentação');
   }
 
-  double calcularDesconto () {
+  double calcularDesconto() {
     return salario * 0.15;
   }
 
-  double salarioLiquido () {
+  double salarioLiquido() {
     return salario - calcularDesconto();
   }
 }
