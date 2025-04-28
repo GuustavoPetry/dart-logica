@@ -22,9 +22,9 @@ void main(List<String> args) {
 
   // Exercicio 03 (Cofrinho):
   Cofrinho c = new Cofrinho();
-  c.saldo = -10; // Set inválido;
-  c.saldo = 0; // outro Set inválido;
-  c.saldo = 150; // Agora sim, Set válido;
+  c.depositar(-10); // Set inválido;
+  c.depositar(0); // outro Set inválido;
+  c.depositar(150); // Agora sim, Set válido;
   print("Saldo da conta: ${c.saldo}\n");
 
   // Exercicio 04 (Produto2)

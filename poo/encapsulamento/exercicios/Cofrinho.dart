@@ -17,4 +17,8 @@ class Cofrinho {
       print("Informe um valor maior que 0");
     }
   }
+
+  void depositar(double valor) {
+    saldo = valor;
+  }
 }
