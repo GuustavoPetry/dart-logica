@@ -1,5 +1,9 @@
+import 'Aluno.dart';
 import './ContaBancaria.dart';
+import 'Login.dart';
 import 'Produto.dart';
+import 'Semaforo.dart';
+import 'Temperatura.dart';
 
 /**
  Encapsulamento é o conceito de ocultar os detalhes internos de uma classe e 
@@ -24,7 +28,7 @@ void main(List<String> args) {
   }
 
   if (conta.sacar(50)) {
-    print("Saque efetuado com sucesso!");
+    print("Saque efetuado com sucesso!\n");
     print("Saldo atual: ${conta.getSaldo()}");
   } else {
     print("Saldo insuficiente");
@@ -47,5 +51,36 @@ void main(List<String> args) {
   p.nome = "Caneta"; // chamando o setter;
   p.preco = 2.5; // chamando o setter;
   // p.nome e p.preco são getters;
-  print("Produto: ${p.nome} | Preço: ${p.preco}");
+  print("Produto: ${p.nome} | Preço: ${p.preco}\n");
+
+  // Login de usuário:
+  Login user = new Login();
+  user.autenticar("123"); // senha incorreta;
+  user.autenticar("123abc"); // senha correta;
+
+  // Semáforo:
+  Semaforo sinal = new Semaforo();
+  sinal.mostrarStatus();
+  sinal.mudarCor();
+  sinal.mostrarStatus();
+  sinal.mudarCor();
+  sinal.mostrarStatus();
+  sinal.mudarCor();
+  sinal.mostrarStatus();
+
+  // Nota Aluno:
+  Aluno a = new Aluno("Gustavo");
+  a.nota = 5;
+  print("\nSituação do aluno: ${a.situacao} | Nota: ${a.nota}"); // Reprovado
+  a.nota = 7;
+  print("Situação do aluno: ${a.situacao} | Nota: ${a.nota}\n"); // Aprovado
+
+  // Temperatura:
+  Temperatura t = new Temperatura();
+  t.celsius = 25;
+  print("Temperatura em Celsius: ${t.celsius}");
+  print("Temperatura em Fahrenheit: ${t.fahrenheit}");
+
+  t.fahrenheit = 96.20;
+  print("Convertido para Celsius: ${t.celsius.toStringAsFixed(2)}");
 }
