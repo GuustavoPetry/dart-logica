@@ -13,7 +13,7 @@ void main(List<String> args) {
   print("Produto: ${p1.nome} | Preço: R\$${p1.preco}\n");
 
   // Exercicio 02 (Pessoa):
-  Pessoa ps = new Pessoa("Gustavo", 25);
+  Pessoa ps = new Pessoa("Gustavo");
   print("Nome: ${ps.nome} | Idade: ${ps.idade}");
   ps.idade = 121; // Set inválido;
   ps.idade = 0; // outro Set inválido;
@@ -29,10 +29,12 @@ void main(List<String> args) {
 
   // Exercicio 04 (Produto2)
   Produto2 p2 = new Produto2();
-  p2.nome = "";
-  p2.nome = "cerveja";
+  p2.name = "";
+  p2.name = "cerveja";
   print("Produto: ${p2.nome}");
-  p2.nome = "arroz";
+  p2.name = "arroz";
+  print("Produto: ${p2.nome}");
+  p2.name = "   fEIJÃO";
   print("Produto: ${p2.nome}\n");
 
   // Exercicio 05 (Estoque):

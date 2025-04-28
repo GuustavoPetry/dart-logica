@@ -5,8 +5,8 @@
 
 class Pessoa {
   String nome;
-  int _idade;
-  Pessoa(this.nome, this._idade);
+  int _idade = 0;
+  Pessoa(this.nome);
 
   int get idade => _idade;
 

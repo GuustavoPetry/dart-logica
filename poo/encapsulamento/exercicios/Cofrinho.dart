@@ -12,7 +12,7 @@ class Cofrinho {
 
   set saldo(double novoSaldo) {
     if (novoSaldo > 0) {
-      _saldo = novoSaldo;
+      _saldo += novoSaldo;
     } else {
       print("Informe um valor maior que 0");
     }
