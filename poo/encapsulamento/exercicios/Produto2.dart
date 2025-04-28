@@ -11,8 +11,12 @@ class Produto2 {
   String get nome => _nome;
 
   set nome(String novoNome) {
-    String primeiraLetra = novoNome[0].toUpperCase();
-    String demaisLetras = novoNome.substring(1);
-    _nome = primeiraLetra + demaisLetras;
+    if (novoNome.isNotEmpty) {
+      String primeiraLetra = novoNome[0].toUpperCase();
+      String demaisLetras = novoNome.substring(1);
+      _nome = primeiraLetra + demaisLetras;
+    } else {
+      print("O nome não pode ser vazio");
+    }
   }
 }

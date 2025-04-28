@@ -29,11 +29,11 @@ void main(List<String> args) {
 
   // Exercicio 04 (Produto2)
   Produto2 p2 = new Produto2();
+  p2.nome = "";
   p2.nome = "cerveja";
   print("Produto: ${p2.nome}");
   p2.nome = "arroz";
   print("Produto: ${p2.nome}\n");
-
 
   // Exercicio 05 (Estoque):
   Estoque e = new Estoque();
