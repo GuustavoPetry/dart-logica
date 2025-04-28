@@ -14,7 +14,7 @@ class Produto2 {
     if (novoNome.isNotEmpty) {
       String nomeLimpo = novoNome.trim();
       String primeiraLetra = nomeLimpo[0].toUpperCase();
-      String demaisLetras = nomeLimpo.substring(1);
+      String demaisLetras = nomeLimpo.substring(1).toLowerCase();
       _nome = primeiraLetra + demaisLetras;
     } else {
       print("O nome não pode ser vazio");
