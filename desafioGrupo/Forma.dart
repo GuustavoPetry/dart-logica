@@ -1,4 +1,7 @@
+
+
 abstract class Forma{
-    String forma = "";
+    String forma;
+    Forma(this.forma);
     double calcularArea();
 }
