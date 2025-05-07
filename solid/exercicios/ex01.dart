@@ -12,27 +12,35 @@ class UsuarioManager {
 }
 
 // Solução respeitando o princípio SRP:
-abstract class Usuario {
+class Usuario {
   String nome;
   String usuario;
   String senha;
   Usuario(this.nome, this.usuario, this.senha);
 }
 
-
 class salvarUsuario extends Usuario {
-  salvarUsuario(String nome, String usuario, String senha) : super(nome, usuario, senha);
+  salvarUsuario(String nome, String usuario, String senha)
+      : super(nome, usuario, senha);
 
   void salvar(String nome) {
-    print("Usuário $nome salvo no banco de dados");
+    print("Usuário ${nome} salvo no banco de dados");
   }
 }
 
-
 class AutenticarUsuario extends Usuario {
-  AutenticarUsuario(String nome, String usuario, String senha) : super(nome, usuario, senha);
+  AutenticarUsuario(String nome, String usuario, String senha)
+      : super(nome, usuario, senha);
 
-  bool autenticar(String usuario, String senha) {
-    return usuario == "admin" && senha == "1234";
+  bool autenticar(String user, String password) {
+    return user == usuario && password == senha;
   }
+}
+
+void main(List<String> args) {
+  salvarUsuario save = new salvarUsuario('Gustavo', 'petry', '123');
+  save.salvar(save.nome);
+
+  AutenticarUsuario auth = new AutenticarUsuario('Gustavo', 'petry', '123');
+  print(auth.autenticar('petry', '123'));
 }

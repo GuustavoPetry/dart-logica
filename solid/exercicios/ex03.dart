@@ -15,35 +15,35 @@ class Quadrado extends Retangulo {
 }
 
 // Solução respeitando o principío LSP:
-abstract class CalcularArea {
-  double area();
+abstract class Forma {
+  double CalcularArea();
 }
 
-class Retanguloo implements CalcularArea {
+class Retanguloo implements Forma {
   double largura;
   double altura;
   Retanguloo(this.largura, this.altura);
 
   @override
-  double area() {
+  double CalcularArea() {
     return largura * altura;
   }
 }
 
-class Quadradoo implements CalcularArea {
+class Quadradoo implements Forma {
   double lado;
   Quadradoo(this.lado);
 
   @override
-  double area() {
+  double CalcularArea() {
     return lado * lado;
   }
 }
 
 void main(List<String> args) {
   Quadradoo quadrado = new Quadradoo(10);
-  Retangulo retangulo = new Retangulo(10, 5);
+  Retanguloo retangulo = new Retanguloo(10, 5);
 
-  print(quadrado.area());
-  print(retangulo.area());
+  print(quadrado.CalcularArea());
+  print(retangulo.CalcularArea());
 }
