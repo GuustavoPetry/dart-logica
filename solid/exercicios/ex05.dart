@@ -20,5 +20,31 @@ class RelatorioService {
 
 // Solução respeitando o princípio DIP:
 
+abstract class Database {
+  void conectar();
+  void salvar(String dado);
+}
 
-      // continuar .....
+class MySQL implements Database {
+  @override
+  void conectar() => print("Conectando ao banco de dados");
+
+  @override
+  void salvar(String dado) => print("Salvando '$dado' no MySQL ");
+}
+
+class RelatorioServicee {
+  final Database db;
+  RelatorioServicee(this.db);
+
+  void geraRelatorio(String conteudo) {
+    db.conectar();
+    db.salvar(conteudo);
+    print("Commit realizado com sucesso!");
+  }
+}
+
+void main(List<String> args) {
+  RelatorioServicee relatorio = new RelatorioServicee(new MySQL());
+  relatorio.geraRelatorio('Gustavo Petry');
+}
