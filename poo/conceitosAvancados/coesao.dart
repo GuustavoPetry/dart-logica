@@ -35,3 +35,18 @@ class GerarRelatorio {
     print("Gerando relatório");
   }
 }
+
+class Email {
+  void enviarEmail() {
+    print("Enviando email");
+  }
+}
+
+class Auth {
+  bool login(String user, String password) {
+    if(user == "admin" && password == "123") {
+      return true;
+    }
+    return false;
+  }
+}
