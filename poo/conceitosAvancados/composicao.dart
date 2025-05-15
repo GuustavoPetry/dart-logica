@@ -21,10 +21,10 @@ class Casa {
     List<Comodo> comodos = [];
 
     Casa() {
-        comodos = [
-            Comodo("Sala"),
-            Comodo("Quarto")
-        ];
+      comodos = [
+        Comodo("Sala"),
+        Comodo("Quarto")
+      ];
     }
 }
 
@@ -38,24 +38,24 @@ class Pedido {
     final List<Produto> itens = [];
 
     void adicionarProduto(Produto produto) {
-        itens.add(produto);
+      itens.add(produto);
     }
 
     double calcularTotal() {
-        double total = 0;
-        for(var produto in itens) {
-            total += produto.preco;
-        }
-        return total;
+      double total = 0;
+      for(var produto in itens) {
+        total += produto.preco;
+      }
+      return total;
     }
 
     void mostrarResumo() {
-        print("Resumo do pedido");
+      print("Resumo do pedido");
 
-        for(var produto in itens) {
-            print("Produto: ${produto.nome} | Valor: ${produto.preco}");
-        }
-        print("Total do pedido: ${calcularTotal()}");
+      for(var produto in itens) {
+          print("Produto: ${produto.nome} | Valor: ${produto.preco}");
+      }
+      print("Total do pedido: ${calcularTotal()}");
     }
 }
 
