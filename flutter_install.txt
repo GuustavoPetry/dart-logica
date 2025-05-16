@@ -5,4 +5,15 @@
     - seleciona Android
     - download and install
     - criar uma pasta 'tools' no disco C: e descompactar o Zip do sdk.
-    
+    - inserir o flutter nas variaveis de ambiente
+    - instalar o android studio
+    - após instalar ir em: more actions -> sdk tools.
+    - marcar as opções: 
+        android sdk command-line tools, 
+        ndk (side by side), 
+        google usb driver, 
+        google web driver,
+        intel x86 acelerator (caso houver a opção)
+    - rodar o comando: flutter doctor --android-licenses
+    - aceitar todas as licensas
+    - rodar flutter doctor
