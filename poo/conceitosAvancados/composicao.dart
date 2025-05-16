@@ -13,59 +13,56 @@
 
 // Aplicando Exemplo 01:
 class Comodo {
-    String nome;
-    Comodo(this.nome);
+  String nome;
+  Comodo(this.nome);
 }
 
 class Casa {
-    List<Comodo> comodos = [];
+  List<Comodo> comodos = [];
 
-    Casa() {
-      comodos = [
-        Comodo("Sala"),
-        Comodo("Quarto")
-      ];
-    }
+  Casa() {
+    comodos = [Comodo("Sala"), Comodo("Quarto")];
+  }
 }
 
 class Produto {
-    final String nome;
-    final double preco;
-    Produto(this.nome, this.preco);
+  final String nome;
+  final double preco;
+  Produto(this.nome, this.preco);
 }
 
 class Pedido {
-    final List<Produto> itens = [];
+  final List<Produto> itens = [];
 
-    void adicionarProduto(Produto produto) {
-      itens.add(produto);
+  void adicionarProduto(Produto produto) {
+    itens.add(produto);
+  }
+
+  double calcularTotal() {
+    double total = 0;
+    for (var produto in itens) {
+      total += produto.preco;
     }
+    return total;
+  }
 
-    double calcularTotal() {
-      double total = 0;
-      for(var produto in itens) {
-        total += produto.preco;
-      }
-      return total;
+  void mostrarResumo() {
+    print("Resumo do pedido");
+
+    for (var produto in itens) {
+      print("Produto: ${produto.nome} | Valor: ${produto.preco}");
     }
-
-    void mostrarResumo() {
-      print("Resumo do pedido");
-
-      for(var produto in itens) {
-          print("Produto: ${produto.nome} | Valor: ${produto.preco}");
-      }
-      print("Total do pedido: ${calcularTotal()}");
-    }
+    print("Total do pedido: ${calcularTotal()}");
+  }
 }
 
 void main(List<String> args) {
-    Produto p1 = Produto("Camisa", 145);
-    Produto p2 = Produto("Bermuda", 50);
+  Produto p1 = Produto("Camisa", 145);
+  Produto p2 = Produto("Bermuda", 50);
 
-    Pedido pedido = Pedido();
-    pedido.adicionarProduto(p1);
-    pedido.adicionarProduto(p2);
+  Pedido pedido = Pedido();
+  pedido.adicionarProduto(p1);
+  pedido.adicionarProduto(p2);
 
-    pedido.mostrarResumo();
+  pedido.mostrarResumo();
 }

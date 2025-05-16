@@ -44,7 +44,7 @@ class Email {
 
 class Auth {
   bool login(String user, String password) {
-    if(user == "admin" && password == "123") {
+    if (user == "admin" && password == "123") {
       return true;
     }
     return false;

@@ -1,0 +1,8 @@
+- Site oficial => www.flutter.dev
+
+- Get started:
+    - seleciona sistema operacional
+    - seleciona Android
+    - download and install
+    - criar uma pasta 'tools' no disco C: e descompactar o Zip do sdk.
+    
