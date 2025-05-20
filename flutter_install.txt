@@ -17,3 +17,19 @@
     - rodar o comando: flutter doctor --android-licenses
     - aceitar todas as licensas
     - rodar flutter doctor
+    - instalação finalizada!
+
+- No android studio (para ativar emulador):
+    - virtual device manager
+    - create virtual device
+    - na opção RAM, reservar o minimo possível para emular
+    
+- criar projeto Flutter:
+    - na pasta que deseja criar o projeto abra o cmd 
+    - execute o comando: flutter create nome_app
+    - instalar o plugin do flutter no vscode para rodar emulador
+    - clicar em Windows X64 (acima do relógio) e escolher o emulador
+    - com o emulador iniciado pode rodar o projeto com: flutter run
+    
+
+
