@@ -16,4 +16,4 @@ Usando bash:
     > iniciar o agente ssh = eval "$(ssh-agent -s)"
     > adicionar a chave ao agente = ssh-add ~/.ssh/id_rsa (cd ~ para achar o usuário)
     > adicionar a chave no github
-    >copiar a chave = cat .ssh/id_rsa.pub
+    > copiar a chave = cat .ssh/id_rsa.pub
